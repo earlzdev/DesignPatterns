@@ -22,8 +22,8 @@ fun main(args: Array<String>) {
 //    val factory = Factory()
 //    factory.createDetail()
 
-    val bubbleSort = BubbleSort()
-    println(Arrays.toString(bubbleSort.sort(arrayOf(1, 2, 7, 4, 109, 7, 45, 34, 6, 99, 56, 32, 45))))
+//    val bubbleSort = BubbleSort()
+//    println(Arrays.toString(bubbleSort.bubbleSort(arrayOf(1, 2, 7, 4, 109, 7, 45, 34, 6, 99, 56, 32, 45))))
 
 }
 

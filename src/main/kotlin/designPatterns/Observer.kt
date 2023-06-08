@@ -1,4 +1,4 @@
-// Define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
+package designPatterns// Define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
 
 open class Subject {
 

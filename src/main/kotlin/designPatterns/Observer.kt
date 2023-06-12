@@ -1,4 +1,7 @@
-package designPatterns// Define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
+package designPatterns
+
+// Define a one-to-many dependency between objects so that when one object changes state,
+// all its dependents are notified and updated automatically.
 
 open class Subject {
 
@@ -37,7 +40,7 @@ class Monitor(val sensor: Sensor) : Observer {
 
     override fun update() {
         val newTemperature = sensor.temperature
-        println("update Monitor")
+        println("update Monitor, new temperature $newTemperature")
     }
 
 }
@@ -50,3 +53,5 @@ fun main() {
     sensor.temperature = 5
     sensor.temperature = 10
 }
+
+

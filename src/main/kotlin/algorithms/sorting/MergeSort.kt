@@ -2,7 +2,7 @@ package algorithms.sorting
 
 class MergeSort {
 
-    private fun sortMergeAlgorithm(items: MutableList<Int>) {
+    fun sortMergeAlgorithm(items: MutableList<Int>) {
         fun merge(items: MutableList<Int>, left: MutableList<Int>, right: MutableList<Int>) {
             var leftIndex = 0
             var rightIndex = 0
@@ -48,4 +48,12 @@ class MergeSort {
         sortMergeAlgorithm(right)
         merge(items, left, right)
     }
+}
+
+fun main() {
+
+    val mergeSort = MergeSort()
+    val listToSort = mutableListOf(3, 6, 1, 4, 89, 23, 56, 90, 132, 5, 8, 45, 67)
+    mergeSort.sortMergeAlgorithm(listToSort)
+    println(listToSort)
 }
